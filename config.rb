@@ -161,5 +161,5 @@ configure :build do
   # set :relative_links, true
 
   # Or use a different image path
-  set :http_prefix, "#{data.ftp.alias}"
+  set :http_prefix, "#{data.ftp.path}/"
 end
