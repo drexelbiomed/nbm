@@ -1,12 +1,20 @@
-a.more-link {
+@mixin more-link($color) {
   font-size: 12px;
   text-transform: uppercase;
   margin-top: 20px;
-  color: $drexel-blue;
+  color: $color;
   font-family: FuturaBold, sans-serif;
   display: inline-block;
   padding: 4px 0 0 27px;
   height: 22px;
   line-height: 14px;
   background: image-url("sprite.png") no-repeat scroll 0 -422px;
+}
+
+a.more-link {
+  @include more-link($drexel-blue);
+}
+
+a.learn-more {
+  @include more-link(#ffffff);
 }
